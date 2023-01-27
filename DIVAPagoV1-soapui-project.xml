@@ -299,7 +299,7 @@
       </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://prewww1.aeat.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://prewww10.aeat.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://www1.agenciatributaria.gob.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://www10.agenciatributaria.gob.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint></con:endpoints><con:operation id="92a7020a-f018-4bc0-9a69-33201bea30b9" isOneWay="false" action="" name="DIVAPagoV1" bindingOperationName="DIVAPagoV1" type="Request-Response" outputName="Salida" inputName="Entrada" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2268debf-70cf-413a-8d98-ba298d5f9487" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http:///mockPagoV1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Ent.xsd">\r
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://prewww1.aeat.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://prewww10.aeat.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://www1.agenciatributaria.gob.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://www10.agenciatributaria.gob.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint></con:endpoints><con:operation id="92a7020a-f018-4bc0-9a69-33201bea30b9" isOneWay="false" action="" name="DIVAPagoV1" bindingOperationName="DIVAPagoV1" type="Request-Response" outputName="Salida" inputName="Entrada" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2268debf-70cf-413a-8d98-ba298d5f9487" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://mock.planetpayment.com/soap/DivaPago Mock/1/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Ent.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <div:DIVAPagoV1Ent id="1" remitente="t" destinatario="1" fecha="2" hora="3" test="1" endPoint="1">\r
@@ -312,10 +312,10 @@
          <!--Optional:-->\r
          <div:identificadorAEAT>test</div:identificadorAEAT>\r
          <!--Optional:-->\r
-         <div:identificadorLocalReferencia>formNumber</div:identificadorLocalReferencia>\r
+         <div:identificadorLocalReferencia>Approved</div:identificadorLocalReferencia>\r
         </div:DIVAPagoV1Ent>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Entrada"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:mockService id="8d5107cb-12dc-48a4-86da-3c6cfe2b3eef" port="8088" path="/mockPagoV1" host="IEGA-L-266" name="DivaPago Mock" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties><con:property><con:name>version</con:name><con:value>1</con:value></con:property></con:properties><con:mockOperation name="DIVAPagoV1" id="7be0702f-3fcf-4051-ae5e-83f1924e03a7" interface="DIVAPagoV1SoapBinding" operation="DIVAPagoV1"><con:settings/><con:defaultResponse>Rejected Response</con:defaultResponse><con:dispatchStyle>QUERY_MATCH</con:dispatchStyle><con:dispatchPath>import com.eviware.soapui.support.XmlHolder
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Entrada"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:mockService id="8d5107cb-12dc-48a4-86da-3c6cfe2b3eef" port="8088" path="/mockPagoV1" host="IEGA-L-266" name="DivaPago Mock" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties><con:property><con:name>version</con:name><con:value>1</con:value></con:property></con:properties><con:mockOperation name="DIVAPagoV1" id="7be0702f-3fcf-4051-ae5e-83f1924e03a7" interface="DIVAPagoV1SoapBinding" operation="DIVAPagoV1"><con:settings/><con:defaultResponse>Rejected Response</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>import com.eviware.soapui.support.XmlHolder
 def holder = new XmlHolder( mockRequest.requestContent )
 def formNumber = holder["//identificadorLocalReferencia"]
 
@@ -327,24 +327,24 @@ if (formNumber == "Approved"){
    <soapenv:Header/>
    <soapenv:Body>
       <div:DIVAPagoV1Sal id="?">
-         <div:tipoRespuesta>?</div:tipoRespuesta>
+         <div:tipoRespuesta>test</div:tipoRespuesta>
          <!--Optional:-->
          <div:entidadDeclarante>
-            <div:nif>?</div:nif>
-            <div:razonSocial>?</div:razonSocial>
+            <div:nif>test</div:nif>
+            <div:razonSocial>test</div:razonSocial>
          </div:entidadDeclarante>
          <!--Optional:-->
          <div:codigoRespuesta>V</div:codigoRespuesta>
          <!--Optional:-->
-         <div:fechaOperacion>?</div:fechaOperacion>
+         <div:fechaOperacion>test</div:fechaOperacion>
          <!--Optional:-->
-         <div:csvDeclaracionElectronica>?</div:csvDeclaracionElectronica>
+         <div:csvDeclaracionElectronica>tests</div:csvDeclaracionElectronica>
          <!--0 to 99 repetitions:-->
          <div:error>
-            <div:codigo>?</div:codigo>
-            <div:descripcion>?</div:descripcion>
+            <div:codigo>testse</div:codigo>
+            <div:descripcion>test</div:descripcion>
             <!--Optional:-->
-            <div:localizacion>?</div:localizacion>
+            <div:localizacion>testes</div:localizacion>
          </div:error>
       </div:DIVAPagoV1Sal>
    </soapenv:Body>
@@ -352,24 +352,24 @@ if (formNumber == "Approved"){
    <soapenv:Header/>
    <soapenv:Body>
       <div:DIVAPagoV1Sal id="?">
-         <div:tipoRespuesta>?</div:tipoRespuesta>
+         <div:tipoRespuesta>test</div:tipoRespuesta>
          <!--Optional:-->
          <div:entidadDeclarante>
-            <div:nif>?</div:nif>
-            <div:razonSocial>?</div:razonSocial>
+            <div:nif>test</div:nif>
+            <div:razonSocial>test</div:razonSocial>
          </div:entidadDeclarante>
          <!--Optional:-->
          <div:codigoRespuesta>R</div:codigoRespuesta>
          <!--Optional:-->
-         <div:fechaOperacion>?</div:fechaOperacion>
+         <div:fechaOperacion>test</div:fechaOperacion>
          <!--Optional:-->
-         <div:csvDeclaracionElectronica>?</div:csvDeclaracionElectronica>
+         <div:csvDeclaracionElectronica>tests</div:csvDeclaracionElectronica>
          <!--0 to 99 repetitions:-->
          <div:error>
-            <div:codigo>?</div:codigo>
-            <div:descripcion>?</div:descripcion>
+            <div:codigo>testse</div:codigo>
+            <div:descripcion>test</div:descripcion>
             <!--Optional:-->
-            <div:localizacion>?</div:localizacion>
+            <div:localizacion>testes</div:localizacion>
          </div:error>
       </div:DIVAPagoV1Sal>
    </soapenv:Body>

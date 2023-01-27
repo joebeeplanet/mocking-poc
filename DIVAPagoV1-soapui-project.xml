@@ -413,7 +413,7 @@
 		                   operation="DIVAPagoV1">
 			<con:settings/>
 			<con:defaultResponse>Rejected Response</con:defaultResponse>
-			<con:dispatchStyle>QUERY_MATCH</con:dispatchStyle>
+			<con:dispatchStyle>SCRIPT</con:dispatchStyle>
 			<con:dispatchPath>import com.eviware.soapui.support.XmlHolder
 def holder = new XmlHolder( mockRequest.requestContent )
 def formNumber = holder["//identificadorLocalReferencia"]
@@ -497,17 +497,15 @@ if (formNumber == "Approved"){
 			                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 				<con:query>
 					<con:name>Approved</con:name>
-					<con:query>declare namespace div='http://www.example.com/hello';
-//div:identificadorLocalReferencia</con:query>
+					<con:query>//identificadorLocalReferencia</con:query>
 					<con:match>Approved</con:match>
-					<con:response xsi:nil="true"/>
+					<con:response>Approved Response</con:response>
 				</con:query>
 				<con:query>
 					<con:name>Rejected</con:name>
-					<con:query>declare namespace div='http://www.example.com/hello';
-//div:identificadorLocalReferencia</con:query>
+					<con:query>//identificadorLocalReferencia</con:query>
 					<con:match>Rejected</con:match>
-					<con:response xsi:nil="true"/>
+					<con:response>Rejected Response</con:response>
 				</con:query>
 			</con:dispatchConfig>
 		</con:mockOperation>

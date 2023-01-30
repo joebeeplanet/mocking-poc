@@ -132,6 +132,13 @@ if (name == "Andrew"){
          </soapenv:Detail>
       </soapenv:Fault>
    </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.com/hello/HelloService/sayHelloResponse"/></con:response><con:response name="Test Response" id="f15f3bef-759a-414c-938c-161764ec2ade" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hel="http://www.example.com/hello">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hel:sayHelloResponse>
+         <sayHello>Hello Test !</sayHello>
+      </hel:sayHelloResponse>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.com/hello/HelloService/sayHelloResponse"/></con:response><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:query><con:name>Andrew</con:name><con:query>declare namespace ser='http://www.example.com/hello';
 //ser:sayHello/name</con:query><con:match>Andrew</con:match><con:response>Andrew Response</con:response></con:query><con:query><con:name>Karla</con:name><con:query>declare namespace ser='http://www.example.com/hello';
 //ser:sayHello/name</con:query><con:match>Karla</con:match><con:response>Karla Response</con:response></con:query></con:dispatchConfig></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

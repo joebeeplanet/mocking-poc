@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="fc2af4a5-b4d4-483c-8286-53601639d20c" activeEnvironment="Default" name="DIVAPago" resourceRoot="" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="054a2764-af21-4d9e-aff6-482691014b7c" wsaVersion="NONE" name="DIVAPagoV1" type="wsdl" bindingName="{https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl}DIVAPagoV1SoapBinding" soapVersion="1_1" anonymous="optional" definition="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl"><con:part><con:url>https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl</con:url><con:content><![CDATA[<!--edited with XMLSpy v2009 sp1 (http://www.altova.com) by PC Corporativo (AGENCIA TRIBUTARIA)-->
+<con:soapui-project id="fc2af4a5-b4d4-483c-8286-53601639d20c" activeEnvironment="Default" name="DIVA" resourceRoot="" soapui-version="5.7.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="054a2764-af21-4d9e-aff6-482691014b7c" wsaVersion="NONE" name="DIVAPagoV1SoapBinding" type="wsdl" bindingName="{https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl}DIVAPagoV1SoapBinding" soapVersion="1_1" anonymous="optional" definition="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl"><con:part><con:url>https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl</con:url><con:content><![CDATA[<!--edited with XMLSpy v2009 sp1 (http://www.altova.com) by PC Corporativo (AGENCIA TRIBUTARIA)-->
 <wsdl:definitions targetNamespace="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:DIVAPagoV1="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl" xmlns:DIVAPagoV1Ent="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Ent.xsd" xmlns:DIVAPagoV1Sal="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd" xmlns:ns1="http://schemas.xmlsoap.org/soap/encoding/">
   <wsdl:documentation>Servicio que define el mensaje de Pago del documento de Devolución IVA (DIVA)</wsdl:documentation>
   <wsdl:types>
@@ -299,25 +299,25 @@
       </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ESMA-L-043:8088/mockDIVAPagoV1</con:endpoint><con:endpoint>https://prewww1.aeat.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://prewww10.aeat.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://www1.agenciatributaria.gob.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://www10.agenciatributaria.gob.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint></con:endpoints><con:operation id="120e57b3-9801-4aa8-b679-cd0d202a5d80" isOneWay="false" action="" name="DIVAPagoV1" bindingOperationName="DIVAPagoV1" type="Request-Response" outputName="Salida" inputName="Entrada" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="da0ef6c6-96a0-4aba-a33e-e3e3ada1132b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://mock.planetpayment.com/soap/DIVAPagoV1SoapBinding+MockService/0.1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Ent.xsd">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://ESMA-L-043:8088/mockDIVAPagoV1SoapBinding</con:endpoint><con:endpoint>https://prewww1.aeat.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://prewww10.aeat.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://www1.agenciatributaria.gob.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint><con:endpoint>https://www10.agenciatributaria.gob.es/wlpl/ADDI-JDIT/ws/DIVAPagoV1SOAP</con:endpoint></con:endpoints><con:operation id="120e57b3-9801-4aa8-b679-cd0d202a5d80" isOneWay="false" action="" name="DIVAPagoV1" bindingOperationName="DIVAPagoV1" type="Request-Response" outputName="Salida" inputName="Entrada" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="da0ef6c6-96a0-4aba-a33e-e3e3ada1132b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://mock.planetpayment.com/soap/DIVAPagoV1SoapBinding+MockService/0.1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Ent.xsd">
    <soapenv:Header/>
    <soapenv:Body>
       <div:DIVAPagoV1Ent id="1" remitente="1" destinatario="1" fecha="2023-01-27" hora="17:00:00" test="Y" endPoint="QA">
          <div:entidadDeclarante>
-            <div:nif>Y1234567P</div:nif>
+            <div:nif>Y12345674</div:nif>
             <div:razonSocial>Test Company</div:razonSocial>
          </div:entidadDeclarante>
          <div:codigoOperacion>1122334455</div:codigoOperacion>
          <div:fechaOperacion>2023-01-01T00:00:00</div:fechaOperacion>
          <!--Optional:-->
-         <div:identificadorAEAT>X123098D</div:identificadorAEAT>
+         <div:identificadorAEAT>Y1234567P</div:identificadorAEAT>
          <!--Optional:-->
          <div:identificadorLocalReferencia>MAD</div:identificadorLocalReferencia>
          <!--Optional:-->
          <div:formaPago>CARD</div:formaPago>
       </div:DIVAPagoV1Ent>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Entrada"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="5d7a9ee5-d1ba-4ae0-868c-3e3d6f3f0825" name="DIVAPagoV1 TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f152f14d-bc77-40ef-9ed2-5563e691d4f9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DIVAPagoV1 TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="4f3c4f40-d823-444a-97a3-9836b4a15b06" name="DIVAPagoV1 Request"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DIVAPagoV1</con:interface><con:operation>DIVAPagoV1</con:operation><con:request name="DIVAPagoV1 Request" id="2fa4a43d-9b88-4866-92ef-756e9608c489"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@skip_soap_action">false</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ESMA-L-043:8088/mockDIVAPagoV1</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Ent.xsd">\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Entrada"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="5d7a9ee5-d1ba-4ae0-868c-3e3d6f3f0825" name="DIVAPagoV1SoapBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f152f14d-bc77-40ef-9ed2-5563e691d4f9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DIVAPagoV1 TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="4f3c4f40-d823-444a-97a3-9836b4a15b06" name="DIVAPagoV1 Request"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DIVAPagoV1SoapBinding</con:interface><con:operation>DIVAPagoV1</con:operation><con:request name="DIVAPagoV1 Request" id="2fa4a43d-9b88-4866-92ef-756e9608c489"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@skip_soap_action">false</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ESMA-L-043:8088/mockDIVAPagoV1SoapBinding</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Ent.xsd">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <div:DIVAPagoV1Ent id="1" remitente="1" destinatario="1" fecha="2023-01-27" hora="17:00:00" test="Y" endPoint="QA">\r
@@ -335,22 +335,29 @@
          <div:formaPago>CARD</div:formaPago>\r
       </div:DIVAPagoV1Ent>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Entrada" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>version</con:name><con:value>2</con:value></con:property></con:properties></con:testSuite><con:mockService id="1750497e-1f2b-440c-99d9-e75d7d681161" port="8088" path="/mockDIVAPagoV1" host="ESMA-L-043" name="DIVAPagoV1 MockService" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties><con:property><con:name>version</con:name><con:value>2</con:value></con:property></con:properties><con:mockOperation name="DIVAPagoV1" id="a5d7f137-e1dc-4c42-be8f-c527f13e5a9b" interface="DIVAPagoV1SoapBinding" operation="DIVAPagoV1"><con:settings/><con:defaultResponse>Mock1</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath/><con:response name="DIVAPagoV1 Response" id="02e92c35-2722-4b80-aa9c-1c109b5bddcd" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Entrada" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>version</con:name><con:value>0.1</con:value></con:property></con:properties></con:testSuite><con:mockService id="1750497e-1f2b-440c-99d9-e75d7d681161" port="8088" path="/mockDIVAPagoV1SoapBinding" host="ESMA-L-043" name="DIVAPagoV1SoapBinding MockService" dispatchResponseMessages="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="DIVAPagoV1" id="a5d7f137-e1dc-4c42-be8f-c527f13e5a9b" interface="DIVAPagoV1SoapBinding" operation="DIVAPagoV1"><con:settings/><con:defaultResponse>DIVAPagoV1 Default</con:defaultResponse><con:dispatchStyle>QUERY_MATCH</con:dispatchStyle><con:dispatchPath>def nif = new XmlSlurper().parseText(mockRequest.requestContent).'**'.find {it.name() == 'nif'}.text()
+
+if (nif == "Y1234567P"){
+    return "DIVAPagoV1 Response"
+} else {
+    return "DIVAPagoV1 Default"
+}
+</con:dispatchPath><con:response name="DIVAPagoV1 Approved Response" id="f8ddb16d-04a1-48db-8b9a-a677573dcbd3" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:script/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd">
    <soapenv:Header/>
    <soapenv:Body>
-      <div:DIVAPagoV1Sal id="?">
-         <div:tipoRespuesta>MOCK</div:tipoRespuesta>
+      <div:DIVAPagoV1Sal id="1">
+         <div:tipoRespuesta>OK</div:tipoRespuesta>
          <!--Optional:-->
          <div:entidadDeclarante>
             <div:nif>Y1234567P</div:nif>
             <div:razonSocial>Test Company</div:razonSocial>
          </div:entidadDeclarante>
          <!--Optional:-->
-         <div:codigoRespuesta>OK</div:codigoRespuesta>
+         <div:codigoRespuesta>A</div:codigoRespuesta>
          <!--Optional:-->
-         <div:fechaOperacion>NOW</div:fechaOperacion>
+         <div:fechaOperacion>2023-01-01T00:00:00</div:fechaOperacion>
          <!--Optional:-->
-         <div:csvDeclaracionElectronica>X</div:csvDeclaracionElectronica>
+         <div:csvDeclaracionElectronica>Y</div:csvDeclaracionElectronica>
          <!--0 to 99 repetitions:-->
          <div:error>
             <div:codigo>0</div:codigo>
@@ -360,22 +367,36 @@
          </div:error>
       </div:DIVAPagoV1Sal>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Salida"/></con:response><con:response name="DIVAPagoV1 Default" id="02e92c35-2722-4b80-aa9c-1c109b5bddcd" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Salida"/></con:response><con:response name="DIVAPagoV1 Default" id="f8ddb16d-04a1-48db-8b9a-a677573dcbd3" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd">
    <soapenv:Header/>
    <soapenv:Body>
-      <div:DIVAPagoV1Sal id="?">
-         <div:tipoRespuesta>MOCK Default</div:tipoRespuesta>
+      <div:DIVAPagoV1Sal id="1">
+         <div:tipoRespuesta>ERR</div:tipoRespuesta>
+         <!--0 to 99 repetitions:-->
+         <div:error>
+            <div:codigo>1</div:codigo>
+            <div:descripcion>ERR</div:descripcion>
+            <!--Optional:-->
+            <div:localizacion>-</div:localizacion>
+         </div:error>
+      </div:DIVAPagoV1Sal>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Salida"/></con:response><con:response name="DIVAPagoV1 Rejected Response" id="f8ddb16d-04a1-48db-8b9a-a677573dcbd3" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:script/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <div:DIVAPagoV1Sal id="1">
+         <div:tipoRespuesta>OK</div:tipoRespuesta>
          <!--Optional:-->
          <div:entidadDeclarante>
             <div:nif>Y1234567P</div:nif>
             <div:razonSocial>Test Company</div:razonSocial>
          </div:entidadDeclarante>
          <!--Optional:-->
-         <div:codigoRespuesta>OK</div:codigoRespuesta>
+         <div:codigoRespuesta>R</div:codigoRespuesta>
          <!--Optional:-->
-         <div:fechaOperacion>NOW</div:fechaOperacion>
+         <div:fechaOperacion>2023-01-01T00:00:00</div:fechaOperacion>
          <!--Optional:-->
-         <div:csvDeclaracionElectronica>X</div:csvDeclaracionElectronica>
+         <div:csvDeclaracionElectronica>Y</div:csvDeclaracionElectronica>
          <!--0 to 99 repetitions:-->
          <div:error>
             <div:codigo>0</div:codigo>
@@ -385,5 +406,6 @@
          </div:error>
       </div:DIVAPagoV1Sal>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Salida"/></con:response><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:query><con:name>OK</con:name><con:query>declare namespace div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd"
-//div:DIVAPagoV1Sal/codigoRespuesta</con:query><con:match>OK</con:match><con:response>Mock1</con:response></con:query></con:dispatchConfig></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Salida"/></con:response><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:query><con:name>Rejected</con:name><con:query>declare namespace div='https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd';
+//div:DIVAPagoV1Ent/div:identificadorLocalReferencia</con:query><con:match>Rejected</con:match><con:response>DIVAPagoV1 Rejected Response</con:response></con:query><con:query><con:name>Approved</con:name><con:query>declare namespace div='https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd';
+//div:DIVAPagoV1Ent/div:identificadorLocalReferencia</con:query><con:match>Approved</con:match><con:response>DIVAPagoV1 Approved Response</con:response></con:query></con:dispatchConfig></con:mockOperation></con:mockService><con:properties><con:property><con:name>version</con:name><con:value>1.0</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

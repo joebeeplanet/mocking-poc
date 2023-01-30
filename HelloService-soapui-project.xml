@@ -95,6 +95,8 @@ if (name == "Andrew"){
     return "Andrew Response"
 } else if (name == "Karla"){
     return "Karla Response"
+} else if (name == "Test"){
+    return "Test Response"
 } else {
     return "World Response"
 }

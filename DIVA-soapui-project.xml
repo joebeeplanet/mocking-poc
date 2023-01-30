@@ -312,7 +312,7 @@
          <!--Optional:-->
          <div:identificadorAEAT>Y1234567P</div:identificadorAEAT>
          <!--Optional:-->
-         <div:identificadorLocalReferencia>Rejected</div:identificadorLocalReferencia>
+         <div:identificadorLocalReferencia>blahblah</div:identificadorLocalReferencia>
          <!--Optional:-->
          <div:formaPago>CARD</div:formaPago>
       </div:DIVAPagoV1Ent>
@@ -330,7 +330,7 @@
          <!--Optional:-->\r
          <div:identificadorAEAT>X123098D</div:identificadorAEAT>\r
          <!--Optional:-->\r
-         <div:identificadorLocalReferencia>blah</div:identificadorLocalReferencia>\r
+         <div:identificadorLocalReferencia>Approved</div:identificadorLocalReferencia>\r
          <!--Optional:-->\r
          <div:formaPago>CARD</div:formaPago>\r
       </div:DIVAPagoV1Ent>\r
@@ -366,7 +366,25 @@
          <!--Optional:-->\r
          <div:identificadorAEAT>X123098D</div:identificadorAEAT>\r
          <!--Optional:-->\r
-         <div:identificadorLocalReferencia>Approved</div:identificadorLocalReferencia>\r
+         <div:identificadorLocalReferencia>blah</div:identificadorLocalReferencia>\r
+         <!--Optional:-->\r
+         <div:formaPago>CARD</div:formaPago>\r
+      </div:DIVAPagoV1Ent>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Entrada" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="a1441afa-03b6-4ee8-beb6-52f926610b4c" name="DIVAPagoV1 Control Request"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DIVAPagoV1SoapBinding</con:interface><con:operation>DIVAPagoV1</con:operation><con:request name="DIVAPagoV1 Control Request" id="2fa4a43d-9b88-4866-92ef-756e9608c489"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@skip_soap_action">false</con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://ESMA-L-043:8088/mockDIVAPagoV1SoapBinding</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Ent.xsd">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <div:DIVAPagoV1Ent id="1" remitente="1" destinatario="1" fecha="2023-01-27" hora="17:00:00" test="Y" endPoint="QA">\r
+         <div:entidadDeclarante>\r
+            <div:nif>Y1234567P</div:nif>\r
+            <div:razonSocial>Test Company</div:razonSocial>\r
+         </div:entidadDeclarante>\r
+         <div:codigoOperacion>1122334455</div:codigoOperacion>\r
+         <div:fechaOperacion>2023-01-01T00:00:00</div:fechaOperacion>\r
+         <!--Optional:-->\r
+         <div:identificadorAEAT>X123098D</div:identificadorAEAT>\r
+         <!--Optional:-->\r
+         <div:identificadorLocalReferencia>Control</div:identificadorLocalReferencia>\r
          <!--Optional:-->\r
          <div:formaPago>CARD</div:formaPago>\r
       </div:DIVAPagoV1Ent>\r
@@ -377,6 +395,8 @@ if (identificadorLocalReferencia == "Approved"){
     return "DIVAPagoV1 Approved Response"
 } else if (identificadorLocalReferencia == "Rejected"){
     return "DIVAPagoV1 Rejected Response"
+} else if (identificadorLocalReferencia == "Control"){
+    return "DIVAPagoV1 Control Response"
 } else {
     return "DIVAPagoV1 Default"
 }</con:dispatchPath><con:response name="DIVAPagoV1 Approved Response" id="f8ddb16d-04a1-48db-8b9a-a677573dcbd3" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:script/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd">
@@ -430,6 +450,31 @@ if (identificadorLocalReferencia == "Approved"){
          </div:entidadDeclarante>
          <!--Optional:-->
          <div:codigoRespuesta>R</div:codigoRespuesta>
+         <!--Optional:-->
+         <div:fechaOperacion>2023-01-01T00:00:00</div:fechaOperacion>
+         <!--Optional:-->
+         <div:csvDeclaracionElectronica>Y</div:csvDeclaracionElectronica>
+         <!--0 to 99 repetitions:-->
+         <div:error>
+            <div:codigo>0</div:codigo>
+            <div:descripcion>OK</div:descripcion>
+            <!--Optional:-->
+            <div:localizacion>MAD</div:localizacion>
+         </div:error>
+      </div:DIVAPagoV1Sal>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1.wsdl/DIVAPagoV1/Salida"/></con:response><con:response name="DIVAPagoV1 Control Response" id="2f588632-87db-43c8-95ba-ea6db06067df" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:div="https://www3.agenciatributaria.gob.es/static_files/common/internet/dep/aduanas/es/aeat/addi/jdit/ws/DIVAPagoV1Sal.xsd">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <div:DIVAPagoV1Sal id="1">
+         <div:tipoRespuesta>OK</div:tipoRespuesta>
+         <!--Optional:-->
+         <div:entidadDeclarante>
+            <div:nif>Y1234567P</div:nif>
+            <div:razonSocial>Test Company</div:razonSocial>
+         </div:entidadDeclarante>
+         <!--Optional:-->
+         <div:codigoRespuesta>C</div:codigoRespuesta>
          <!--Optional:-->
          <div:fechaOperacion>2023-01-01T00:00:00</div:fechaOperacion>
          <!--Optional:-->
